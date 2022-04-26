@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["'DM Sans'", "sans-serif"] },
+          },
+        },
+      };
+    </script>
+    <script defer src="/index.js"></script>
+    <title>Widget</title>
+  </head>
+  <body class="text-sans bg">
+    <!-- Container -->
+    <div class="bg-white">
+      <div class="max-w-2xl mx-auto py-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+        <!-- Widget heading -->
+        <div class="flex items-center justify-between space-x-4">
+          <h2 class="text-xl font-bold text-gray-900">Popular courses</h2>
+          <a
+            href="#"
+            class="whitespace-nowrap text-md font-medium text-blue-600 hover:text-blue-500 hover:underline"
+            >View all</a
+          >
+        </div>
+        <h3 class="text-md text-gray-900">Access 80+ courses for as little as £10 per user per year</h3>
+        <!-- Grid -->
+        <div
+          class="relative mt-6 sm:grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4 overflow-hidden max-w-[370px] sm:max-w-none"
+        >
+          <!-- Carousel buttons -->
+          <div class="flex justify-between absolute top-[50%] translate-y-[50%] z-20 w-full sm:hidden">
+            <button id="carousel_button_prev" class="bg-blue-500 text-white rounded p-1 font-bold">
+              Prev
+            </button>
+            <button id="carousel_button_next" class="bg-blue-500 text-white rounded p-1 font-bold">
+              Next
+            </button>
+          </div>
+          <!-- #1 -->
+          <div class="relative group carousel_item">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100 h-full">
+              <img
+                src="https://tayl.net/uploads/hands-in-2.jpg?_cchid=78bc2400f139f2639c275cd97f0cdb1b"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      A Partnership Approach to Care
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consequatur voluptatem totam
+                  id rerum aliquam dolores adipisci error quo vitae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #2 -->
+          <div class="relative group hidden carousel_item sm:block">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100 h-full">
+              <img
+                src="https://tayl.net/uploads/jn-2.jpg?_cchid=af1d16bc2e14cd3a9e4f2fd35d3a9944"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Adult Support and Protection (Scotland)
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente natus molestias nam qui
+                  nemo unde totam animi recusandae voluptates corrupti. Eveniet vel similique esse doloribus
+                  sed, eaque error laboriosam sit?
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #3 -->
+          <div class="relative group carousel_item hidden sm:block">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100 h-full">
+              <img
+                src="https://tayl.net/uploads/ki-2.jpg?_cchid=90bd54381e2f8ba2408d31f0a5c8de48"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Advanced Child Protection Awareness (Scotland)
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, totam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #4 -->
+          <div class="relative group hidden carousel_item sm:block">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100 h-full">
+              <img
+                src="https://tayl.net/uploads/nuts-2.jpg?_cchid=529f17b21f49a4d91d8f1a7f2d945685"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Allergen Awareness [with Natasha's Law]
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores illum quis eaque
+                  repudiandae exercitationem accusamus. Nulla recusandae similique sunt dignissimos?
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #5 -->
+          <div class="relative group hidden">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+              <img
+                src="https://tayl.net/uploads/children-drawing-2.jpg?_cchid=26e3b280285c8fb7c6b47a69a18ef84c"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Building the Ambition (Scotland)
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, totam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #6 -->
+          <div class="relative group hidden">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+              <img
+                src="https://tayl.net/uploads/doctor-and-patient-1.jpg?_cchid=e55fd738eeb4321a05547d8e98eb76a4"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Care Planning
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, totam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #7 -->
+          <div class="relative group hidden">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+              <img
+                src="https://tayl.net/uploads/nnlk-2.jpg?_cchid=b47932cb2a64f09fc7c769b0cba0dccc"
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Carers Awareness
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, totam!
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- #8 -->
+          <div class="relative group hidden">
+            <div class="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden bg-gray-100">
+              <img
+                src="https://tayl.net/uploads/mjkbk-2.jpg?_cchid=9ae64239452e3676e9aa9437ca4992b2   "
+                alt=""
+                class="object-center object-cover w-full h-44"
+              />
+              <div class="p-2" aria-hidden="true">
+                <div class="flex items-center justify-between text-base font-medium text-gray-900 space-x-8">
+                  <h4>
+                    <a href="#">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Child Development: 5-11 years
+                    </a>
+                  </h4>
+                </div>
+                <p class="mt-1 text-sm text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, totam!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- CTA -->
+        <div>
+          <div class="max-w-7xl mx-auto py-6 px-2 lg:py-12 lg:flex lg:items-center lg:justify-between">
+            <h2 class="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">
+              <span class="block">Ready to dive in?</span>
+              <span class="block text-blue-600">Start your free trial today.</span>
+            </h2>
+            <div class="mt-4 flex lg:mt-0 lg:flex-shrink-0">
+              <div class="inline-flex rounded-md shadow">
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700"
+                >
+                  Get started
+                </a>
+              </div>
+              <div class="ml-3 inline-flex rounded-md shadow">
+                <a
+                  href="#"
+                  class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50"
+                >
+                  Discover more
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
